@@ -136,8 +136,7 @@ const Section = () => {
               </AccordionButton>
               <AccordionPanel>
                 <p>
-                  React is a popular JavaScript library for building user
-                  interfaces.
+                React is a JavaScript library used to build user interfaces for web and mobile applications. It allows developers to create reusable UI components and manage the state of their applications efficiently, making it easier to build complex and interactive interfaces.
                 </p>
               </AccordionPanel>
             </AccordionItem>
@@ -154,8 +153,7 @@ const Section = () => {
               </AccordionButton>
               <AccordionPanel>
                 <p>
-                  HTML5 is a markup language used for structuring and presenting
-                  content on the web.
+                HTML5 is the latest version of the markup language used to create and structure content on the web, including text, images, videos, and more. It includes new elements and attributes that make it easier to create interactive and dynamic web pages.
                 </p>
               </AccordionPanel>
             </AccordionItem>
@@ -168,12 +166,11 @@ const Section = () => {
               onMouseLeave={() => setIconState(iconState)}
             >
               <AccordionButton>
-                <h3 className="text-2xl">Node.js</h3>
+                <h3 className="text-2xl">TypeScript</h3>
               </AccordionButton>
               <AccordionPanel>
                 <p>
-                  Node.js is a JavaScript runtime built on Chrome's V8
-                  JavaScript engine.
+                TypeScript is a statically-typed superset of JavaScript that adds optional type annotations and other advanced features, helping developers catch errors early and write more scalable and maintainable code. It compiles to plain JavaScript and is widely used in modern web development.
                 </p>
               </AccordionPanel>
             </AccordionItem>
@@ -190,8 +187,7 @@ const Section = () => {
               </AccordionButton>
               <AccordionPanel>
                 <p>
-                  CSS3 is the latest evolution of the Cascading Style Sheets
-                  language and aims to extend CSS2.1.
+                CSS3 is the latest version of the Cascading Style Sheets language used to define the look and layout of web pages. It includes new features such as flexible box layout, grid layout, and animations that allow designers to create more sophisticated and engaging user interfaces.
                 </p>
               </AccordionPanel>
             </AccordionItem>
