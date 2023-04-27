@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="BG" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3862.31 2388.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Gradient_bez_nazwy_7);
+      }
+    </style>
+    <linearGradient id="Gradient_bez_nazwy_7" data-name="Gradient bez nazwy 7" x1="1714.23" y1="2842.67" x2="2212.25" y2="-942.28" gradientUnits="userSpaceOnUse">
+      <stop offset=".01" stop-color="#f2f6fc"/>
+      <stop offset=".15" stop-color="#dde0e8"/>
+      <stop offset=".43" stop-color="#a8a7b4"/>
+      <stop offset=".78" stop-color="#5e586d"/>
+    </linearGradient>
+  </defs>
+  <rect class="cls-1" width="3862.31" height="2388.13"/>
+</svg>
