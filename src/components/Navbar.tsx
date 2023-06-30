@@ -15,24 +15,12 @@ function Navbar({}: Props) {
   const socialIcons = (
     <div className="flex space-x-4">
       <SocialIcon
-        url="https://www.linkedin.com/"
+        url="https://www.linkedin.com/in/wojciech-pieczonka-326710166/"
         fgColor="gray"
         bgColor="transparent"
       />
       <SocialIcon
         url="https://www.github.com/wp9975"
-        fgColor="gray"
-        bgColor="transparent"
-        target="_blank"
-      />
-      <SocialIcon
-        url="https://www.twitter.com/"
-        fgColor="gray"
-        bgColor="transparent"
-        target="_blank"
-      />
-      <SocialIcon
-        url="https://www.instagram.com/"
         fgColor="gray"
         bgColor="transparent"
         target="_blank"
