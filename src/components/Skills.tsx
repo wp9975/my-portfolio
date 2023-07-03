@@ -60,7 +60,7 @@ const Section = () => {
         window.removeEventListener("scroll", handleScroll);
       };
     } else {
-      // Zatrzymaj animację rotacji obręczy z ikonami tutaj
+      
     }
   }, [inView, rotation]);
 

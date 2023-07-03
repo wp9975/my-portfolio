@@ -11,15 +11,13 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 
 export default function Home() {
-
-
   return (
     <div className="min-w-full bg-background">
       <Head>
         <title>Portfolio</title>
       </Head>
 
-      <main className="w-full">
+      <main id="main" className="w-full">
         {/* Navigation */}
         <Navbar />
         <ParallaxProvider>
@@ -28,9 +26,8 @@ export default function Home() {
           {/* About */}
           <About />
           {/* Experience */}
-          
           <Skills />
- 
+
           {/* Projects */}
           <Projects />
           {/* Contact Me */}

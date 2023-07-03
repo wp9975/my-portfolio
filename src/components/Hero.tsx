@@ -40,7 +40,7 @@ const Hero = () => {
                   <Typewriter
                     options={{
                       strings: [
-                        "I'm a Full Stack Developer",
+                        "I'm a Front End Developer",
                         "I'm a Web Developer",
                         "I'm a Software Developer",
                         "I'm a Programmer",

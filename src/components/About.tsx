@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import QualificationsModal from "./subcomponents/QualificationsModal";
 
 type Props = {};
 
@@ -47,19 +48,14 @@ const About = (props: Props) => {
             About Me
           </h2>
           <p className="text-lg text-center md:text-xl">
-            I am a Full Stack Developer with a passion for creating beautiful
-            and functional web applications. With a strong background in HTML,
-            CSS, and JavaScript, I enjoy developing responsive and
-            user-friendly websites. My experience includes working with
-            popular frameworks and libraries such as React and Node.js.
+            I am a Front End Developer with a passion for creating beautiful and
+            functional web applications. With a strong background in HTML, CSS,
+            and JavaScript, I enjoy developing responsive and user-friendly
+            websites. My experience includes working with popular frameworks and
+            libraries such as React and NextJS.
           </p>
           <div className="flex items-center justify-center w-full py-5">
-            <button className="px-6 py-2 mx-auto text-white bg-blue-900 rounded-lg focus:outline-none focus:ring-4 hover:bg-blue-600 focus:ring-blue-300">
-              View my work
-            </button>
-            <button className="px-6 py-2 mx-auto text-white bg-blue-900 rounded-lg focus:outline-none focus:ring-4 hover:bg-blue-600 focus:ring-blue-300">
-              Check my qualifications
-            </button>
+            <QualificationsModal />
           </div>
         </motion.div>
       </div>
