@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Button, useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalCloseButton, ModalBody, Text, Heading } from "@chakra-ui/react";
-import { FaWindowClose } from "react-icons/fa";
 
 const QualificationsModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -24,9 +23,7 @@ const QualificationsModal = () => {
             </Text>
             <Heading size="md" mb="2">Studies:</Heading>
             <Text>
-              I hold a Bachelor's Degree in Engineering, which has given me a
-              strong foundation in problem-solving, project management, and
-              technical skills.
+             {'I hold a Bachelor\'s Degree in Engineering, which has given me a strong foundation in problem-solving, project management, and technical skills.'}
             </Text>
           </ModalBody>
         </ModalContent>

@@ -73,7 +73,7 @@ const Projects = () => {
         px={{ base: "6", md: "16" }}
       >
         {projectData.map((project) => (
-          <ProjectCard project={project} />
+          <ProjectCard project={project} key={project.id} />
         ))}
       </Grid>
       
