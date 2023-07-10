@@ -1,0 +1,48 @@
+@keyframes moveBird1 {
+    0% {
+      left: -10%;
+      top: 20%;
+    }
+  
+    100% {
+      left: 110%;
+      top: 20%;
+    }
+  }
+  
+  @keyframes moveBird2 {
+    0% {
+      left: -15%;
+      top: 22%;
+    }
+  
+    100% {
+      left: 115%;
+      top: 12%;
+    }
+  }
+  
+  @keyframes moveBird3 {
+    0% {
+      left: -20%;
+      top: 24%;
+    }
+  
+    100% {
+      left: 120%;
+      top: 24%;
+    }
+  }
+  
+  .animate-bird-1 {
+    animation: moveBird1 4.2s forwards;
+  }
+  
+  .animate-bird-2 {
+    animation: moveBird2 4s forwards;
+  }
+  
+  .animate-bird-3 {
+    animation: moveBird3 3.7s forwards;
+  }
+  

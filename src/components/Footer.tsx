@@ -7,6 +7,7 @@ import backgroundtreesfront from "../assets/svg/hero/herobackgroundTreesFront.sv
 import backgroundtreesback from "../assets/svg/hero/herobackgroundTreesBack.svg";
 import backgroundtreesmiddle from "../assets/svg/hero/herobackgroundTreesMiddle.svg";
 import { useInView } from "react-intersection-observer";
+import Birds from "./subcomponents/Birds";
 
 const Footer = () => {
   const { ref, inView, entry } = useInView({
@@ -78,6 +79,7 @@ const Footer = () => {
           height: "100%",
         }}
       />
+      <Birds/>
     </section>
   );
 };

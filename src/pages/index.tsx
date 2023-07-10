@@ -8,6 +8,7 @@ import ContactMe from "@/components/ContactMe";
 import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
 import { ParallaxProvider } from "react-scroll-parallax";
+import LandingSection from "@/components/landing/LandingSection";
 
 
 export default function Home() {
@@ -20,9 +21,11 @@ export default function Home() {
       <main id="main" className="w-full">
         {/* Navigation */}
         <Navbar />
+        <div className="h-20"></div>
         <ParallaxProvider>
           {/* Hero */}
-          <Hero />
+            {/* <Hero /> */}
+            <LandingSection/>
           {/* About */}
           <About />
           {/* Experience */}

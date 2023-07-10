@@ -6,6 +6,7 @@ import backgroundfront from "../assets/svg/hero/herobackgroundfront.svg";
 import backgroundtreesfront from "../assets/svg/hero/herobackgroundTreesFront.svg";
 import backgroundtreesback from "../assets/svg/hero/herobackgroundTreesBack.svg";
 import backgroundtreesmiddle from "../assets/svg/hero/herobackgroundTreesMiddle.svg";
+import Birds from "./subcomponents/Birds";
 
 const Hero = () => {
   return (
@@ -68,6 +69,9 @@ const Hero = () => {
           height: "100%",
         }}
       />
+
+        <Birds/>
+
     </section>
   );
 };

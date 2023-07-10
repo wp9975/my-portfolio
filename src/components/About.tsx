@@ -22,7 +22,7 @@ const About = (props: Props) => {
   };
 
   return (
-    <section id="about" className="w-full">
+    <section id="about" className="w-full ">
       <div
         ref={ref}
         className="relative flex flex-wrap items-center justify-center w-full px-4 py-16 text-white"
