@@ -48,16 +48,14 @@ const LandingContent = (props: Props) => {
       animate={inView ? "show" : "exit"}
       exit="exit"
     >
-      <motion.h2 className="mb-2 text-2xl font-bold" variants={childVariants}>Hi, I'm</motion.h2>
+      <motion.h2 className="mb-2 text-2xl font-bold" variants={childVariants}>{"Hi, I\'m"}</motion.h2>
       <motion.h2 className="mb-2 text-4xl font-bold" variants={childVariants}>Wojtek</motion.h2>
       <motion.p className="mb-2" variants={childVariants}>
         As an ambitious and dedicated front-end developer, I seek to create
         intuitive and efficient user experiences.
       </motion.p>
       <motion.p className="px-20 mb-4" variants={childVariants}>
-        With React, TypeScript, and Tailwind CSS, I'm
-        capable of delivering high-quality work that satisfies both design and
-        functionality goals.
+       { "With React, TypeScript, and Tailwind CSS, I\'m capable of delivering high-quality work that satisfies both design and functionality goals."}
       </motion.p>
       <motion.h3 className="mb-2 text-xl font-bold" variants={childVariants}>Technologies I Use</motion.h3>
 
