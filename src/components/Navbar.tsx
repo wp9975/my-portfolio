@@ -18,12 +18,14 @@ function Navbar({}: Props) {
         url="https://www.linkedin.com/in/wojciech-pieczonka-326710166/"
         fgColor="gray"
         bgColor="transparent"
+        className="rounded-full bthover"
       />
       <SocialIcon
         url="https://www.github.com/wp9975"
         fgColor="gray"
         bgColor="transparent"
         target="_blank"
+        className="rounded-full bthover"
       />
     </div>
   );
@@ -36,16 +38,16 @@ function Navbar({}: Props) {
       exit={{ x: 100, opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <Link href="#about" className="transition-all duration-300 border-white cursor-pointer hover:border-t-2">
+      <Link href="#about" className="text-lg transition-all duration-300 border-white cursor-pointer hover-link hover:border-t-2">
         About
       </Link>
-      <Link href="#skills" className="transition-all duration-300 border-white cursor-pointer hover:border-t-2">
+      <Link href="#skills" className="text-lg transition-all duration-300 border-white cursor-pointer hover-link hover:border-t-2">
         Skills
       </Link>
-      <Link href="#projects" className="transition-all duration-300 border-white cursor-pointer hover:border-t-2">
+      <Link href="#projects" className="text-lg transition-all duration-300 border-white cursor-pointer hover-link hover:border-t-2">
         Projects
       </Link>
-      <Link href="#contact" className="transition-all duration-300 border-white cursor-pointer hover:border-t-2">
+      <Link href="#contact" className="text-lg transition-all duration-300 border-white cursor-pointer hover-link hover:border-t-2">
         Contact
       </Link>
     </motion.nav>
@@ -76,7 +78,7 @@ function Navbar({}: Props) {
                 <Link
                   href="#about"
                   onClick={toggleMenu}
-                  className="px-6 py-3 cursor-pointer focus:ring-4 ring-white"
+                  className="px-6 py-3 cursor-pointer focus:ring-4 ring-white "
                 >
                   About
                 </Link>

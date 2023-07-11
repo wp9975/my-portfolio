@@ -7,7 +7,7 @@ type Props = {};
 
 const BgAnimating = (props: Props) => {
   return (
-<div className="z-10 min-h-screen">
+<div className="absolute top-0 z-10 min-h-screen">
   <ul className={classes.background}>
     <li style={{backgroundImage: 'url(/images/landing/1.png)'}}></li>
     <li style={{backgroundImage: 'url(/images/landing/2.png)'}}></li>

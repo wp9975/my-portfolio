@@ -80,45 +80,47 @@ const Section = () => {
       className="relative flex flex-wrap w-full py-20 mx-auto max-w-screen-2xl"
     >
       <div className="w-full md:flex ">
-        <div className="relative p-8 transform md:flex ">
-          <div
-            className={` flex items-center transition-all duration-500 justify-center border-8 rounded-full w-96 h-96 ${
-              iconState === 0
-                ? "border-gray-600"
-                : iconState === 1
-                ? "border-slate-700"
-                : iconState === 2
-                ? "border-green-900"
-                : "border-blue-900"
-            }`}
-            style={{ transform: `rotate(${rotation}deg)` }}
-          >
-            <FaReact
-              className={`fixed p-1 text-5xl  rounded-full ${
-                iconState === 0 ? " bg-gray-600 text-white" : "bg-white"
-              }`}
-              style={{zIndex: 1, transform: " translate(-390%, 50%)" }}
-            />
-            <FaHtml5
-              className={`fixed p-1 text-5xl  rounded-full ${
-                iconState === 1 ? "bg-slate-700 text-white" : "bg-white"
-              }`}
-              style={{zIndex: 1, transform: " translate(50%, 390%)" }}
-            />
-            <FaNodeJs
-              className={`fixed p-1 text-5xl  rounded-full ${
-                iconState === 2 ? "bg-green-900 text-white" : "bg-white"
-              }`}
-              style={{zIndex: 1, transform: " translate(390%, -50%)" }}
-            />
-            <FaCss3Alt
-              className={`fixed p-1 text-5xl  rounded-full ${
-                iconState === 3 ? "bg-blue-900 text-white" : "bg-white"
-              }`}
-              style={{zIndex: 1, transform: " translate(-50%, -390%)" }}
-            />
-          </div>
-        </div>
+       
+      <div className="relative w-full p-8 overflow-hidden transform md:w-1/2 md:flex ">
+  <div
+    className={`relative flex items-center transition-all duration-500 justify-center border-8 rounded-full w-96 h-96 ${
+      iconState === 0
+        ? "border-gray-600"
+        : iconState === 1
+        ? "border-slate-700"
+        : iconState === 2
+        ? "border-green-900"
+        : "border-blue-900"
+    }`}
+    style={{ transform: `rotate(${rotation}deg)` }}
+  >
+    <FaReact
+      className={`absolute p-1 text-5xl  rounded-full ${
+        iconState === 0 ? " bg-gray-600 text-white" : "bg-white"
+      }`}
+      style={{ top: '50%', left: '0', transform: 'translate(-50%, -50%)' }}
+    />
+    <FaHtml5
+      className={`absolute p-1 text-5xl  rounded-full ${
+        iconState === 1 ? "bg-slate-700 text-white" : "bg-white"
+      }`}
+      style={{ bottom: '0', left: '50%', transform: 'translate(-50%, 50%)' }}
+    />
+    <FaNodeJs
+      className={`absolute p-1 text-5xl  rounded-full ${
+        iconState === 2 ? "bg-green-900 text-white" : "bg-white"
+      }`}
+      style={{ top: '50%', right: '0', transform: 'translate(50%, -50%)' }}
+    />
+    <FaCss3Alt
+      className={`absolute p-1 text-5xl  rounded-full ${
+        iconState === 3 ? "bg-blue-900 text-white" : "bg-white"
+      }`}
+      style={{ top: '0', left: '50%', transform: 'translate(-50%, -50%)' }}
+    />
+  </div>
+</div>  
+
 
         <div className="relative w-full p-4 space-y-4 text-white ">
           <h2 className="text-4xl">Skills</h2>

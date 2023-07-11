@@ -13,7 +13,7 @@ import LandingSection from "@/components/landing/LandingSection";
 
 export default function Home() {
   return (
-    <div className="min-w-full bg-background">
+    <div className="w-full bg-background">
       <Head>
         <title>Portfolio</title>
       </Head>

@@ -19,48 +19,61 @@ const containerVariants = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1
-    }
+      staggerChildren: 0.1,
+    },
   },
   exit: {
     opacity: 0,
     transition: {
       staggerChildren: 0.05,
-      staggerDirection: -1
-    }
-  }
+      staggerDirection: -1,
+    },
+  },
 };
 
 const childVariants = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -20 }
+  exit: { opacity: 0, y: -20 },
 };
 
 const LandingContent = (props: Props) => {
   const { ref, inView } = useInView({
-    threshold: 0.3,
+    threshold: 0.15,
   });
   return (
-    <motion.div ref={ref} className="absolute z-20 flex flex-col items-center justify-center pt-10 text-center text-white bg-black bg-opacity-50 rounded-b-full "
+    <motion.div
+      ref={ref}
+      className="z-20 flex flex-col items-center justify-center w-full pt-10 text-center text-white bg-black bg-opacity-50 rounded-b-full md:w-auto "
       variants={containerVariants}
       initial="hidden"
       animate={inView ? "show" : "exit"}
       exit="exit"
     >
-      <motion.h2 className="mb-2 text-2xl font-bold" variants={childVariants}>{"Hi, I\'m"}</motion.h2>
-      <motion.h2 className="mb-2 text-4xl font-bold" variants={childVariants}>Wojtek</motion.h2>
+      <motion.h2 className="mb-2 text-2xl font-bold" variants={childVariants}>
+        {"Hi, I'm"}
+      </motion.h2>
+      <motion.h2 className="mb-2 text-4xl font-bold" variants={childVariants}>
+        Wojtek
+      </motion.h2>
       <motion.p className="mb-2" variants={childVariants}>
         As an ambitious and dedicated front-end developer, I seek to create
         intuitive and efficient user experiences.
       </motion.p>
       <motion.p className="px-20 mb-4" variants={childVariants}>
-       { "With React, TypeScript, and Tailwind CSS, I\'m capable of delivering high-quality work that satisfies both design and functionality goals."}
+        {
+          "With React, TypeScript, and Tailwind CSS, I'm capable of delivering high-quality work that satisfies both design and functionality goals."
+        }
       </motion.p>
-      <motion.h3 className="mb-2 text-xl font-bold" variants={childVariants}>Technologies I Use</motion.h3>
+      <motion.h3 className="mb-2 text-xl font-bold" variants={childVariants}>
+        Technologies I Use
+      </motion.h3>
 
-      <motion.ul className="flex justify-center space-x-4" variants={childVariants}>
-      <li>
+      <motion.ul
+        className="flex justify-center space-x-4"
+        variants={childVariants}
+      >
+        <li>
           <SiHtml5 size={30} />
         </li>
         <li>
@@ -93,7 +106,6 @@ const LandingContent = (props: Props) => {
         className="w-48 h-48 mb-8 rounded-full"
         variants={childVariants}
       />
-
     </motion.div>
   );
 };
